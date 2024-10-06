@@ -1,6 +1,5 @@
 
 const loadPosts = async (categoryName = "") => {
-
     // Alternative Way.
     // if (categoryName)
     //     url = `https://openapi.programming-hero.com/api/retro-forum/posts?category=${categoryName}`;
@@ -15,16 +14,15 @@ const loadPosts = async (categoryName = "") => {
 }
 
 const displayPosts = (posts) => {
-    const postContainer = document.getElementById('post-container');
-    postContainer.innerHTML = "";
 
+    const postContainer = document.getElementById('post-container');
     posts.forEach((post) => {
         const div = document.createElement('div');
 
         div.innerHTML = `
          <div class="w-full lg:w-[772px] space-y-5 bg-[#797dfc]/10 p-10 rounded-3xl flex flex-col md:flex-row gap-6">
 
-                <div class="indicator">
+                <div class="indicator mt-6">
                     <span class="indicator-item badge ${post.isActive ? "bg-green-600" : "bg-red-500"}"></span>
                     <div class="bg-base-300 grid h-32 w-32 place-items-center">
                         <img src="${post.image}" alt="" class="">
@@ -70,6 +68,7 @@ const displayPosts = (posts) => {
 
         postContainer.appendChild(div);
     });
+    document.getElementById('postLoader').classList.add('hidden');
 }
 
 const markAsRead = (description, viewCount) => {
@@ -97,7 +96,9 @@ const handleSearchByCategory = () => {
     const searchText = document.getElementById('searchPosts').value;
     console.log(searchText);
 
-    // document.getElementById('postLoader').classList.remove('hidden');
+    document.getElementById('postLoader').classList.remove('hidden');
+    const postContainer = document.getElementById('post-container');
+    postContainer.innerHTML = "";
     setTimeout(function () {
         loadPosts(searchText);
     }, 3000)
