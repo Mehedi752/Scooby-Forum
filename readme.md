@@ -1,4 +1,4 @@
-<h2 align="center" style="font-weight: bold;">💻 <b>Scooby Forum</b> Dynamic Website with JavaScript DOM Manipulation & JS API 💻</h2>
+<h2 align="center" style="font-weight: bold;">💻 <b>Scooby Forum</b> Dynamic Website with JavaScript DOM Manipulation & JavaScript API 💻</h2>
 
 <p align="center">
 <a href="https://forum-scooby.netlify.app/">📱Live Visit This Project</a>
