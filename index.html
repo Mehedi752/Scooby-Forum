@@ -129,11 +129,14 @@
         </section>
 
 
-
+        <!-- All Posts Section. -->
         <section class="container mx-auto flex lg:flex-row flex-col justify-between gap-6 lg:gap-0 my-12 px-5 md:px-5">
 
             <div id="post-container" class="flex flex-col gap-6">
-
+                <div class="flex w-full justify-center">
+                    <span id="postLoader"
+                        class="loading loading-spinner loading-lg lg:mt-24 text-primary hidden"></span>
+                </div>
             </div>
 
             <div class="lg:w-4/12">
@@ -154,8 +157,79 @@
             </div>
         </section>
 
+
+        <!-- Forum Section -->
+        <section class="container mx-auto my-8 lg:my-12 px-5 lg:px-0">
+            <div
+                class="lg:p-16 rounded-3xl *:text-white bg-[#12132D] p-6 flex flex-col-reverse lg:flex-row justify-center items-center gap-8">
+                <div class="lg:space-y-8 space-y-5 lg:w-7/12">
+                    <h2 class="font-extrabold text-2xl lg:text-4xl">Join Our Forum</h2>
+                    <p class="opacity-60">
+                        Dont forget to share your unforgettable moments with us and also
+                        dont forget to join our forum to get the latest news and updates.
+                    </p>
+                    <button
+                        class="btn bg-primary text-white font-extrabold rounded-full border-none lg:px-16 lg:btn-lg hover:bg-white hover:text-primary">
+                        Register Now
+                    </button>
+                </div>
+                <div class="lg:w-5/12 flex justify-end">
+                    <img src="./images/joinforum.png" alt="form image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Post section -->
+        <section class="container mx-auto lg:my-18 my-8 px-5 lg:px-0">
+            <div class="flex lg:w-2/5 mx-auto flex-col items-center justify-center p-4 space-y-4">
+                <h2 class="font-extrabold text-2xl lg:text-5xl">Latest Posts</h2>
+                <p class="opacity-60">
+                    Got mind blowing ideas? Share with us and get the latest updates and
+                    news too from our forum.
+                </p>
+            </div>
+
+            <div id="latest-post-container" class="flex gap-10 lg:gap-5 lg:flex-row lg:justify-around flex-col py-8">
+
+                <!-- Dynamic Content.  -->
+        </section>
+
     </main>
 
+    <footer style="
+      background: linear-gradient(
+        180deg,
+        rgba(18, 19, 45, 0.05) 0%,
+        rgba(18, 19, 45, 0) 100%
+      );
+    " class="footer footer-center lg:py-20 py-10 bg-opacity-20 text-primary-content mt-16 lg:mt-20 *:text-black">
+        <aside class="lg:w-3/6 w-5/6">
+            <a class="btn btn-ghost text-xs lg:text-4xl uppercase gap-0 font-extrabold lg:mb-4">Sc<img
+                    class="lg:h-12 h-8" src="./images/scooby.png" />by</a>
+            <p class="font-base opacity-60 lg:text-xl">
+                Believing in the power of the community and the power of the people.
+                Thoughts are more powerful than anything else.
+            </p>
+        </aside>
+
+        <nav>
+            <div class="grid grid-flow-col gap-4 *:text-xl">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+            </div>
+        </nav>
+        <hr class="w-4/6 mx-auto" />
+        <div class="footer footer-center p-4 text-base-content">
+            <aside>
+                <p class="opacity-60 lg:text-lg">
+                    Copyright © 2024 - All right reserved by Rafi Ferdos
+                </p>
+            </aside>
+        </div>
+    </footer>
+    <!-- scripts -->
 
     <!-- Add Script File. -->
     <script src="./js/index.js"></script>
