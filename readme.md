@@ -1,5 +1,4 @@
-<h1 align="center" style="font-weight: bold;">💻 <b>Scooby Forum</b> Dynamic Website with JavaScript DOM Manipulation & JS API 💻</h1>
-<p align="center">This project is an online bus ticket booking website designed to provide a smooth and user-friendly experience for users looking to book bus tickets. The site uses HTML, CSS, and JavaScript with DOM manipulation to dynamically update the page based on user input."</p>
+<h2 align="center" style="font-weight: bold;">💻 <b>Scooby Forum</b> Dynamic Website with JavaScript DOM Manipulation & JS API 💻</h2>
 
 <p align="center">
 <a href="https://forum-scooby.netlify.app/">📱Live Visit This Project</a>
